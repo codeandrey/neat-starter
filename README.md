@@ -1,4 +1,4 @@
-# Wordpress Foundation Starter Theme
+# Wordpress Foundation Starter Theme: No Foundation
 
 A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/)
 
