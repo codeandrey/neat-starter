@@ -19,7 +19,7 @@ It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.or
 
 ##Installation
 
-  * Run bower install to install the latest version of Foundation
+  * Run bower install to install the latest version of Bourbon/Neat
   * Or, install Foundation's bower component through Codekit
 
 ##Use It
@@ -42,4 +42,3 @@ This file contains and initializes our main theme class. All theme setup and cus
 This file is loaded by Wordpress when the theme is loaded, so we bootstrap here.
 
 It is also used as the name suggests, to create theme functions to be used in template files.
-
