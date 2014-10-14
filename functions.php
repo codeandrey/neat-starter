@@ -9,14 +9,14 @@ include( 'theme.class.php' );
 /* THEME FUNCTIONS */
 /* ====================================== */
 
-
+add_theme_support( 'post-thumbnails' );//adds featured image support
 
 
 /**
 *
 * Get a snippet/excerpt from any content
 * This is a much more robust replacement for WP's excerpt field. This will generate a snippet from any text string.
-* 
+*
 **/
 function get_snippet( $content, $limit, $break=" ", $pad="..." ) {
 	if(strlen($content) <= $limit) {
