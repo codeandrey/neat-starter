@@ -20,8 +20,7 @@ It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.or
 
 ## Installation
 
-  * [Download or clone this starter compass project](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
-  * Run `bower install` to install the latest version of Foundation
+
   
 Then when you're working on your project, just run the following command:
 
@@ -57,5 +56,3 @@ This file contains and initializes our main theme class. All theme setup and cus
 This file is loaded by Wordpress when the theme is loaded, so we bootstrap here. 
 
 It is also used as the name suggests, to create *theme functions* to be used in template files.
-
-
