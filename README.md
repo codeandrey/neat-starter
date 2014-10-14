@@ -20,6 +20,7 @@ It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.or
 ##Installation
 
   * Update Modernizr if you wish.
+  * Update Neat if you wish.
 
 ##Use It
 
