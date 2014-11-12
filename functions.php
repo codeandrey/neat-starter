@@ -30,6 +30,43 @@ function get_snippet( $content, $limit, $break=" ", $pad="..." ) {
  	return wpautop($content);
 }
 
+/**
+*
+* Modify the body_class function
+*
+**/
+function condensed_body_class($classes) {
+    global $post;
+
+    // add a class for the name of the page - later might want to remove the auto generated pageid class which isn't very useful
+    if( is_page()) {
+        $pn = $post->post_name;
+        $classes[] = "page_".$pn;
+    }
+
+    // add a class for the parent page name
+    $post_parent = get_post($post->post_parent);
+    $parentSlug = $post_parent->post_name;
+
+    if ( is_page() && $post->post_parent ) {
+            $classes[] = "parent_".$parentSlug;
+    }
+
+    // add class for the name of the custom template used (if any)
+    $temp = get_page_template();
+    if ( $temp != null ) {
+        $path = pathinfo($temp);
+        $tmp = $path['filename'] . "." . $path['extension'];
+        $tn= str_replace(".php", "", $tmp);
+        $classes[] = "template_".$tn;
+    }
+
+    return $classes;
+
+}
+
+add_filter('body_class', 'condensed_body_class');
+
 
 
 
