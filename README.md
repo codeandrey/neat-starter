@@ -1,25 +1,27 @@
-# Wordpress Foundation Starter Theme: No Foundation
+# Wordpress Starter Theme: Neat Starter
 
-A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/)
+A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/)
+
+Forked from Andrew Croce's Magnificent [Wordpress Foundation Starter Theme](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
 
 It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.org/andrewcroce/wordpress-skeleton)
-
-## Packaged Plugins
-
-  * [Advanced Custom Fields](http://www.advancedcustomfields.com/)
-  * [Advanced Custom Fields Addon: Options Page](http://www.advancedcustomfields.com/add-ons/options-page/) **License Required**
-  * [Advanced Custom Fields Addon: Repeater Field](http://www.advancedcustomfields.com/add-ons/repeater-field/) **License Required**
-  * [Gravity Forms](http://www.gravityforms.com/) **License Required**
 
 ## Requirements
 
   * [Node.js](http://nodejs.org)
   * [bower](http://bower.io): `npm install bower -g`
-  * [CodeKit](https://incident57.com/codekit/)
+
+## Recommended Plugins
+
+The theme will prompt you to install these plugins automatically. Thanks to Thomas Griffen's [Plugin Activation Class](https://github.com/thomasgriffin/TGM-Plugin-Activation).
+
+* [Advanced Custom Fields](http://www.advancedcustomfields.com/) - The gold standard for creating custom fields written by Elliot Condon.
+* [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) - Not strictly necessary, but it makes creating custom post types and taxonomies a breeze.
+* [iThemes Security](https://wordpress.org/plugins/better-wp-security/) - Formerly Better WP Security. A good idea, in general. Unless you want hackers.
 
 ##Installation
 
-  * Update Modernizr if you wish.
+  * Modernizr, Bourbon, and Normalize are packaged as bower components. Although every effort is made to keep these up to date, feel free to run `bower update` to be sure you're up to date.
   * Update Neat if you wish.
 
 ##Use It
