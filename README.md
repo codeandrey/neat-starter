@@ -4,7 +4,7 @@ A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/) an
 
 Forked from Andrew Croce's Magnificent [Wordpress Foundation Starter Theme](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
 
-It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.org/andrewcroce/wordpress-skeleton)
+It is recommended to be used as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.org/andrewcroce/wordpress-skeleton)
 
 ## Requirements
 
