@@ -15,9 +15,9 @@ It is packaged as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.or
 
 The theme will prompt you to install these plugins automatically. Thanks to Thomas Griffen's [Plugin Activation Class](https://github.com/thomasgriffin/TGM-Plugin-Activation).
 
-* [Advanced Custom Fields](http://www.advancedcustomfields.com/) - The gold standard for creating custom fields written by Elliot Condon.
-* [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) - Not strictly necessary, but it makes creating custom post types and taxonomies a breeze.
-* [iThemes Security](https://wordpress.org/plugins/better-wp-security/) - Formerly Better WP Security. A good idea, in general. Unless you want hackers.
+  * [Advanced Custom Fields](http://www.advancedcustomfields.com/) - The gold standard for creating custom fields written by Elliot Condon.
+  * [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) - Not strictly necessary, but it makes creating custom post types and taxonomies a breeze.
+  * [iThemes Security](https://wordpress.org/plugins/better-wp-security/) - Formerly Better WP Security. A good idea, in general. Unless you want hackers.
 
 ##Installation
 
@@ -29,7 +29,7 @@ The theme will prompt you to install these plugins automatically. Thanks to Thom
 This theme presumes you have a working knowledge of how to create Wordpress themes.
 
   * [Learn about theme development](http://codex.wordpress.org/Theme_Development)
-  * [Handy cheat sheet for template hierarchy and file naming](http://codex.wordpress.org/images/1/18/Template_Hierarchy.png)
+  * [Handy cheat sheet for template hierarchy and file naming](http://codex.wordpress.org/images/9/96/wp-template-hierarchy.jpg)
 
 ##Theme Class File
 
