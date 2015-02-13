@@ -33,6 +33,7 @@ function get_snippet( $content, $limit, $break=" ", $pad="..." ) {
 /**
 *
 * Modify the body_class function
+* source: http://mimoymima.com/better-body-class-function-wordpress/
 *
 **/
 function condensed_body_class($classes) {
@@ -44,13 +45,12 @@ function condensed_body_class($classes) {
         $classes[] = "page_".$pn;
     }
 
-    // add a class for the parent page name
-    $post_parent = get_post($post->post_parent);
-    $parentSlug = $post_parent->post_name;
-
-    if ( is_page() && $post->post_parent ) {
-            $classes[] = "parent_".$parentSlug;
-    }
+		// add a class for the parent page name
+		if ( is_page() && $post->post_parent ) {
+				$post_parent = get_post($post->post_parent);
+				$parentSlug = $post_parent->post_name;
+				$classes[] = "parent_".$parentSlug;
+		}
 
     // add class for the name of the custom template used (if any)
     $temp = get_page_template();
