@@ -4,12 +4,13 @@ A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/) an
 
 Forked from Andrew Croce's Magnificent [Wordpress Foundation Starter Theme](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
 
-It is recommended to be used as a submodule of [WordPress-Skeleton, Fork](https://bitbucket.org/andrewcroce/wordpress-skeleton)
+It is recommended to be used as a submodule of [WordPress-Skeleton](https://github.com/markjaquith/WordPress-Skeleton)
 
 ## Requirements
 
   * [Node.js](http://nodejs.org)
   * [bower](http://bower.io): `npm install bower -g`
+  * [Codekit](https://incident57.com/codekit/) is recommended, but not required.
 
 ## Recommended Plugins
 
@@ -21,8 +22,7 @@ The theme will prompt you to install these plugins automatically. Thanks to Thom
 
 ##Installation
 
-  * Modernizr, Bourbon, and Normalize are packaged as bower components. Although every effort is made to keep these up to date, feel free to run `bower update` to be sure you're up to date.
-  * Update Neat if you wish.
+  * Modernizr, Bourbon, Neat, and Normalize are packaged as bower components. Although every effort is made to keep these up to date, feel free to run `bower update` to be sure you're up to date.
 
 ##Use It
 
