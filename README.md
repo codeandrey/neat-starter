@@ -2,15 +2,23 @@
 
 A starting point for Wordpress Themes, built on [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/)
 
-Forked from Andrew Croce's Magnificent [Wordpress Foundation Starter Theme](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
+Forked from Andrew Croce's Awesome [Wordpress Foundation Starter Theme](https://bitbucket.org/andrewcroce/wordpress-foundation-starter-theme)
 
 It is recommended to be used as a submodule of [WordPress-Skeleton](https://github.com/markjaquith/WordPress-Skeleton)
 
 ## Requirements
 
   * [Node.js](http://nodejs.org)
-  * [bower](http://bower.io): `npm install bower -g`
-  * [Codekit](https://incident57.com/codekit/) is recommended, but not required.
+  * [bower](http://bower.io): `$ npm install -g bower`
+  * [Gulp](http://gulpjs.com/) `$ npm install -g gulp`
+
+## Initializing
+
+
+
+## Updates
+
+
 
 ## Recommended Plugins
 
