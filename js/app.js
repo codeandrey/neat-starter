@@ -1,3 +1,7 @@
+// Include scripts for minify
+//
+//= include ['*.js', '!app.js']
+
 jQuery(document);
 
 (function($){

@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
+    include = require('gulp-include'),
     uglify = require('gulp-uglify'),
     jshint = require('gulp-jshint'),
     livereload = require('gulp-livereload'),
@@ -21,15 +21,14 @@ gulp.task('update', function() {
   return bower({ cmd: 'update'});
 });
 
-//Lint, concatinate, and minify scripts
+//Lint and minify scripts
 gulp.task('scripts', function() {
   return gulp.src('./js/*.js')
+    .pipe(include())
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest('./js'))
     .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename('app.min.js'))
     .pipe(gulp.dest('./js/min'))
     .on('error', gutil.log);
 });
