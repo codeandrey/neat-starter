@@ -9,8 +9,8 @@ It is recommended to be used as a submodule of [WordPress-Skeleton](https://gith
 ## Requirements
 
   * [Node.js](http://nodejs.org)
-  * [bower](http://bower.io): `$ npm install -g bower`
-  * [Gulp](http://gulpjs.com/) `$ npm install -g gulp`
+  * [Bower](http://bower.io): `$ npm install -g bower`
+  * [Gulp](http://gulpjs.com/): `$ npm install -g gulp`
 
 ## Initializing
 
