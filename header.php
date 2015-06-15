@@ -32,21 +32,21 @@
 	<?php wp_head(); ?>
 
 	<!--[if lte IE 8]>
-	<link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/stylesheets/lt-ie9.css"/>
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/lt-ie9.css"/>
 	<![endif]-->
 
 </head>
 <body <?php body_class(); ?>>
 
 	<div id="skip-links" class="screenreader">
-		<a href="#main-navigation"><?= __('Go to navigation','theme') ?></a>
-		<a href="#main-content"><?= __('Go to content','theme') ?></a>
+		<a href="#main-navigation"><?php echo __('Go to navigation','theme'); ?></a>
+		<a href="#main-content"><?php echo __('Go to content','theme'); ?></a>
 	</div>
 
 	<header id="main-header">
 
 		<div id="site-branding" role="banner">
-			<span id="site-title"><a href="<?= home_url() ?>" title="<?= esc_attr( get_bloginfo( 'name', 'display' ) ) ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+			<span id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			<span id="site-description"><?php bloginfo( 'description' ); ?></span>
 		</div>
 
