@@ -30,7 +30,8 @@ gulp.task('scripts', function() {
     .pipe(uglify())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('./js/min'))
-    .on('error', gutil.log);
+    .on('error', gutil.log)
+    .pipe(livereload());
 });
 
 //Compile and minify stlyes
@@ -40,21 +41,18 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./stylesheets'))
     .pipe(rename({suffix: '.min'}))
     .pipe(sass({outputStyle:'compressed'}))
-    .pipe(gulp.dest('./stylesheets'));
+    .pipe(gulp.dest('./stylesheets'))
+    .pipe(livereload());
 });
 
 //Watch for changes
 gulp.task('watch', function() {
+  livereload.listen();
   gulp.watch('./scss/*.scss', ['styles']);
   gulp.watch('./js/*.js', ['scripts']);
 });
 
-//Live reload server
-gulp.task('serve', function() {
-
-});
-
 //Default gulp function
 gulp.task('default', ['watch'], function() {
-
+  
 });
