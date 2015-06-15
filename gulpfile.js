@@ -2,43 +2,60 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     bower = require('gulp-bower'),
     changed = require('gulp-changed'),
+    sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
-    minifyCss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    jshint = require('gulp-jshint'),
     livereload = require('gulp-livereload'),
     watch = require('gulp-watch');
 
+//Initialize project
 gulp.task('init', function() {
   return bower();
 });
 
+//Update bower components
 gulp.task('update', function() {
   return bower({ cmd: 'update'});
 });
 
+//Lint, concatinate, and minify scripts
 gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
+  return gulp.src('./js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('./js'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('js/min'))
+    .pipe(gulp.dest('./js/min'))
     .on('error', gutil.log);
 });
 
+//Compile and minify stlyes
 gulp.task('styles', function() {
-  return gulp.src('scss/*.scss')
-    .pipe(sass({ style: 'expanded' }))
-    .pipe(gulp.dest('stylesheets'))
+  gulp.src('./scss/*.scss')
+    .pipe(sass({outputStyle:'expanded'}))
+    .pipe(gulp.dest('./stylesheets'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifyCss())
-    .pipe(gulp.dest('stylesheets'))
-    .on('error', gutil.log);
+    .pipe(sass({outputStyle:'compressed'}))
+    .pipe(gulp.dest('./stylesheets'));
 });
 
-gulp.task('default', function() {
-  gulp.watch('scss/*.scss', ['styles']);
-  gulp.watch('js/*.js', ['scripts']);
+//Watch for changes
+gulp.task('watch', function() {
+  gulp.watch('./scss/*.scss', ['styles']);
+  gulp.watch('./js/*.js', ['scripts']);
+});
+
+//Live reload server
+gulp.task('serve', function() {
+
+});
+
+//Default gulp function
+gulp.task('default', ['watch'], function() {
+
 });
