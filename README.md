@@ -19,15 +19,13 @@ It is recommended to be used as a submodule of [WordPress-Skeleton](https://gith
 
 ## Recommended Plugins
 
-The theme will prompt you to install these plugins automatically. Thanks to Thomas Griffen's [Plugin Activation Class](https://github.com/thomasgriffin/TGM-Plugin-Activation).
+To utilize live reload, it's recommended that you install the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension for chrome.
+
+The theme will prompt you to install the following plugins automatically thanks to Thomas Griffen's [Plugin Activation Class](https://github.com/thomasgriffin/TGM-Plugin-Activation).
 
   * [Advanced Custom Fields](http://www.advancedcustomfields.com/) - The gold standard for creating custom fields written by Elliot Condon.
   * [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) - Not strictly necessary, but it makes creating custom post types and taxonomies a breeze.
   * [iThemes Security](https://wordpress.org/plugins/better-wp-security/) - Formerly Better WP Security. A good idea, in general. Unless you want hackers.
-
-##Installation
-
-  * Modernizr, Bourbon, Neat, and Normalize are packaged as bower components. Although every effort is made to keep these up to date, feel free to run `bower update` to be sure you're up to date.
 
 ##Use It
 
