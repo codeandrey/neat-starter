@@ -14,11 +14,8 @@ It is recommended to be used as a submodule of [WordPress-Skeleton](https://gith
 
 ## Initializing
 
-
-
-## Updates
-
-
+  * Run `npm install` to install dev dependencies
+  * Run `gulp init` to install bower components
 
 ## Recommended Plugins
 
