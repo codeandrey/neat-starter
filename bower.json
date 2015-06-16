@@ -1,0 +1,30 @@
+{
+  "name": "neat-starter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bgantick/neat-starter",
+  "authors": [
+    "Brian Gantick <bgantick@gmail.com>"
+  ],
+  "description": "A starting point for Wordpress Themes, built on Bourbon and Neat",
+  "keywords": [
+    "wp",
+    "wordpress",
+    "bourbon",
+    "neat",
+    "sass",
+    "scss",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.3",
+    "modernizer": "~2.8.2",
+    "normalize-scss": "~3.0.2",
+    "neat": "~1.7.2"
+  }
+}
