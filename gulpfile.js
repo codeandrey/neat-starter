@@ -36,7 +36,7 @@ gulp.task('scripts', function() {
 
 //Compile and minify stlyes
 gulp.task('styles', function() {
-  gulp.src('./scss/*.scss')
+  return gulp.src('./scss/*.scss')
     .pipe(sass({outputStyle:'expanded'}))
     .pipe(gulp.dest('./stylesheets'))
     .pipe(rename({suffix: '.min'}))
@@ -45,14 +45,21 @@ gulp.task('styles', function() {
     .pipe(livereload());
 });
 
+//Generic php LiveReload task
+gulp.task('reload', function() {
+  return gulp.src('*.php')
+    .pipe(livereload());
+});
+
 //Watch for changes
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('./scss/*.scss', ['styles']);
   gulp.watch('./js/*.js', ['scripts']);
+  gulp.watch('*.php', ['reload'] );
 });
 
 //Default gulp function
 gulp.task('default', ['watch'], function() {
-  
+
 });
