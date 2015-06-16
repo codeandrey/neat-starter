@@ -16,6 +16,8 @@ It is recommended to be used as a submodule of [WordPress-Skeleton](https://gith
 
   * Run `npm install` to install dev dependencies
   * Run `gulp init` to install bower components
+  * Run `gulp update` to update bower components during development
+  * Default `gulp` command will watch for changes, alternatively you can run `gulp watch`
 
 ## Recommended Plugins
 
